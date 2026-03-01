@@ -40,9 +40,6 @@ body {
 section {
   flex: 1;
   padding: 30px;
-}
-
-.academic-info, .review-info, .skills-info {
   display: none;
 }
 
@@ -95,4 +92,12 @@ button:hover {
 }
 .review-section h3 {
   margin-bottom: 10px;
+}
+
+.success-message {
+  text-align: center;
+}
+
+section.active {
+  display: block;
 }
