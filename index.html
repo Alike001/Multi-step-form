@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="sidebar">
+      <div class="personal">
+        <p>01</p>
+        <h3>Personal Information</h3>
+      </div>
+      <div class="academic">
+        <p>02</p>
+        <h3>Academic Information</h3>
+      </div>
+      <div class="skills">
+        <p>03</p>
+        <h3>Skills & Competencies</h3>
+      </div>
+      <div class="review">
+        <p>04</p>
+        <h3>Review & Submit</h3>
+      </div>
+    </div>
+
+    <section class="personal-info">
+      <h2>Personal Information</h2>
+      <p>Tell us a little about yourself to begin your registration.</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Hammed Ali">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="text" id="age" inputmode="numeric" placeholder="19">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="name@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" inputmode="numeric" placeholder="09127525692">
+        </div>
+      </form>
+      <button>Next Step</button>
+    </section>
+
+    <section class="academic-info">
+      <h2>Academic Information</h2>
+      <p>Share your school and program details to continue.</p>
+      <form>
+        <div class="form-group">
+          <label for="school">School</label>
+          <input type="text" id="school" placeholder="Lagos State University">
+        </div>
+        <div class="form-group">
+          <label for="level">Level</label>
+          <input type="text" id="level" placeholder="300 level">
+        </div>
+        <div class="form-group">
+          <label for="department">Department</label>
+          <input type="text" id="department" placeholder="Physics">
+        </div>
+      </form>
+      <button>Next Step</button>
+    </section>
+
+    <section class="skills-info">
+      <h2>Skills & Competencies</h2>
+      <p>Please provide information about your skills. List your current skills, rate your proficiency, and tell us which skills you would like to develop further.</p>
+      <form>
+        <div class="form-group">
+          <label for="skills">What skills do you have?</label>
+          <input type="text" id="skills" placeholder="e.g coding, Leadership">
+        </div>
+        <div class="form-group">
+          <label for="proficiency">How would you rate your proficiency?</label>
+          <select id="skill-level">
+            <option value="">Select proficiency</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4">Expert</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="improvement">Which skills do you want to improve?</label>
+          <input type="text" id="improvement" placeholder="Graphic Design">
+        </div>
+      </form>
+      <button>Next Step</button>
+    </section>
+
+    <section class="review-info">
+      <h2>Review & Submit</h2>
+      <p>Please review all the information below before submitting your registration. Click "Submit" when you're ready.</p>
+
+      <div class="review-section">
+        <h3>Personal Information</h3>
+        <p><strong>Name:</strong> <span id="review-name"></span></p>
+        <p><strong>Age:</strong> <span id="review-age"></span></p>
+        <p><strong>Email:</strong> <span id="review-email"></span></p>
+        <p><strong>Phone:</strong> <span id="review-phone"></span></p>
+      </div>
+
+      <div class="review-section">
+        <h3>Academic Information</h3>
+        <p><strong>School:</strong> <span id="review-school"></span></p>
+        <p><strong>Level:</strong> <span id="review-level"></span></p>
+        <p><strong>Department:</strong> <span id="review-department"></span></p>
+      </div>
+
+      <div class="review-section">
+        <h3>Skills & Competencies</h3>
+        <p><strong>Skills:</strong> <span id="review-skills"></span></p>
+        <p><strong>Proficiency:</strong> <span id="review-proficiency"></span></p>
+        <p><strong>Skills to Improve:</strong> <span id="review-improvement"></span></p>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
