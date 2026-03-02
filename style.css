@@ -117,6 +117,12 @@ section.active {
   color: lightblue;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

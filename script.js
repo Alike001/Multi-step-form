@@ -3,6 +3,8 @@ const nextButtons =document.querySelectorAll(".next-btn");
 const submitBtn = document.querySelector(".submit-btn");
 const steps = document.querySelectorAll(".step");
 const editBtn = document.querySelector(".edit");
+const emailError = document.querySelector(".js-email-error");
+const emailInput = document.getElementById("email");
 
 let currentStep = 0;
 
@@ -22,6 +24,17 @@ stepIndicator();
 
 nextButtons.forEach((button)=> {
   button.addEventListener("click", () => {
+    if(currentStep === 0) {
+      const emailValue = emailInput.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if(!emailPattern.test(emailValue)) {
+        emailError.innerHTML = 'Invalid email address';
+        return;
+      } else {
+          emailError.innerHTML = "";
+        }
+    }
     if (sections[currentStep].classList.contains("skills-info")) {
     fillReview();
     }

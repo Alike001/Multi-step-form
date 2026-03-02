@@ -11,6 +11,10 @@ It allows students to input personal, academic, and skills information step by s
 - Mobile responsive design.
 - Displays a success message after submission.
 
+## Validation
+- Email field is validated using a regular expression.
+- Prevents navigation to the next step if the email format is invalid.
+- Displays an error message for incorrect email input.
 
 ## How to Use
 1. Open `index.html` in your browser.
