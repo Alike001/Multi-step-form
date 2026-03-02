@@ -101,3 +101,18 @@ button:hover {
 section.active {
   display: block;
 }
+
+.step {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.step.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.step.completed {
+  opacity: 1;
+  color: lightblue;
+}
