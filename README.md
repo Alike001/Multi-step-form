@@ -17,7 +17,7 @@ It allows students to input personal, academic, and skills information step by s
 - Displays an error message for incorrect email input.
 
 ## How to Use
-1. Open `index.html` in your browser.
+1. Open `index.html`in your browser or click the live demo link.
 2. Fill in the **Personal Information**, **Academic Information**, and **Skills & Competencies** steps.
 3. Click **Next Step** to navigate through the form.
 4. On the **Review & Submit** page, you can:
