@@ -116,3 +116,32 @@ section.active {
   opacity: 1;
   color: lightblue;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  .sidebar div {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

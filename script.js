@@ -1,7 +1,8 @@
 const sections = document.querySelectorAll("section");
 const nextButtons =document.querySelectorAll(".next-btn");
 const submitBtn = document.querySelector(".submit-btn");
-const steps = document.querySelectorAll(".step")
+const steps = document.querySelectorAll(".step");
+const editBtn = document.querySelector(".edit");
 
 let currentStep = 0;
 
@@ -34,6 +35,13 @@ nextButtons.forEach((button)=> {
 submitBtn.addEventListener("click", () => {
   sections[currentStep].classList.remove("active");
   currentStep++;
+  sections[currentStep].classList.add("active");
+  stepIndicator();
+});
+
+editBtn.addEventListener("click", () => {
+  sections[currentStep].classList.remove("active");
+  currentStep = 0;
   sections[currentStep].classList.add("active");
   stepIndicator();
 });
